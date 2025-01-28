@@ -45,6 +45,21 @@
 
 `DELETE /sessions/{id}`
 
+## Создать заказ
+
+### Request
+
+`POST /api/orders`
+
+{
+    "type_id": 1,
+    "partnership_id": 1,
+    "date": "2025-01-12",
+    "address": "Moscow",
+    "amount": 100,
+    "status": "created"
+}
+
 ## Назначить работника на заказ
 
 ### Request
@@ -68,6 +83,6 @@
 
 # Дополнительная информация
 
-Каждый запрос должен сопровождаться заголовками Autorization: Bearer {access_token} и Accept: application/json
+Каждый запрос должен сопровождаться заголовками `Autorization: Bearer {access_token}` и `Accept: application/json`
 
 Для удобства на главной странице добавлена форма для отправки данных на endpoint получения токена
